@@ -1,4 +1,5 @@
 import { ADD_ITEM, TOGGLE_ITEM, SET_FILTER, Filters } from './actions'
+import { combineReducers } from 'redux'
 const { SHOW_ALL } = Filters
 
 function filter (state = SHOW_ALL, action) {
@@ -33,3 +34,10 @@ function list(state = [], action) {
         return state
   }
 }
+
+const listApp = combineReducers ({
+  filter,
+  list
+})
+
+export default listApp
