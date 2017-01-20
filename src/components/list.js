@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
+import Item from './item'
 import ListHeader from './list-header'
 
-export default class List extends React.Component {
-  render() {
-    return (
-      <table>
-        <ListHeader />
-      </table>
-    )
-  }
-}
+const List = ({ items, onItemClick }) => (
+  <ul>
+    {items.map(item =>
+      <Item key={item.id}
+      {...item}
+      onClick={() => onItemClick(item.id)}
+      />
+    )}
+  </ul>
+)
