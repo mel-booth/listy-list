@@ -19,7 +19,8 @@
   "homepage": "https://github.com/mel-booth/listy-list#readme",
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.0",
