@@ -1,4 +1,5 @@
 import { ADD_ITEM, TOGGLE_ITEM, SET_FILTER, Filters } from './actions'
+const { SHOW_ALL } = Filters
 
 function filter (state = SHOW_ALL, action) {
   switch (action.type) {
