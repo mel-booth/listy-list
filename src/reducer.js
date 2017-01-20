@@ -1,5 +1,14 @@
 import { ADD_ITEM, TOGGLE_ITEM, SET_FILTER, Filters } from './actions'
 
+function filter (state = SHOW_ALL, action) {
+  switch (action.type) {
+    case SET_FILTER:
+      return action.filter
+    default:
+    return state
+  }
+}
+
 function list(state = [], action) {
   switch (action.type) {
     case ADD_ITEM:
