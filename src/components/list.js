@@ -12,3 +12,14 @@ const List = ({ items, onItemClick }) => (
     )}
   </ul>
 )
+
+List.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    complete: PropTypes.bool.isRequired,
+    text: PropTypes.string.isRequired
+  }).isRequired).isRequired,
+  onItemClick:PropTypes.func.isRequired
+}
+
+export default List
