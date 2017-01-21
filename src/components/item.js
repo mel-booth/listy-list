@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react'
 
 const Item = ({onClick, complete, text}) => (
-  <li onClick={onCLick} style={{textDecoration: completed ? 'line-through' : 'none'}}>
+  <li onClick={onClick} style={{textDecoration: complete ? 'line-through' : 'none'}}>
     {text}
   </li>
 )
 
 Item.propTypes = {
   onClick: PropTypes.func.isRequired,
-  complete: PropTypes.bool.isREquired,
+  complete: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
 }
 

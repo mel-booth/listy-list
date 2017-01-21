@@ -4,7 +4,7 @@ const item = (state = {}, action) => {
       return {
         id: action.id,
         text: action.text,
-        completed: false
+        complete: false
       }
     case 'TOGGLE_ITEM':
       if (state.id !== action.id) {
@@ -12,7 +12,7 @@ const item = (state = {}, action) => {
       }
 
       return Object.assign({}, state, {
-        completed: !state.completed
+        complete: !state.complete
       })
 
     default:
