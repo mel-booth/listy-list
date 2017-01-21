@@ -1,7 +1,11 @@
 import React, { PropTypes } from 'react'
 
 const Item = ({onClick, complete, text}) => (
-  <li onClick={onClick} style={{textDecoration: complete ? 'line-through' : 'none'}}>
+  <li onClick={onClick}
+    style={{
+      textDecoration: complete ? 'line-through' : 'none'
+    }}
+    >
     {text}
   </li>
 )

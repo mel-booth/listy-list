@@ -1,15 +1,16 @@
 import item from './item'
+import VisibleItemList from '../containers/visibleItemList'
 
 const items = (state = [], action) => {
   switch (action.type) {
     case 'ADD_ITEM':
       return [
         ...state,
-        item(state, action)
+        item(undefined, action)
       ]
     case 'TOGGLE_ITEM':
       return state.map(t =>
-        item(state, action)
+        item(t, action)
       )
     default:
       return state
