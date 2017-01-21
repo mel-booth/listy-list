@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { toggleItem } from '../actions'
-import List from '../components/list'
+import List from './list'
 
 const getVisibleItems = (items, filter) => {
   switch (filter) {
