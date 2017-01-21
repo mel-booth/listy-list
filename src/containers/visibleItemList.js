@@ -7,9 +7,9 @@ const getVisibleItems = (items, filter) => {
     case 'SHOW_ALL':
       return items
     case 'SHOW_COMPLETE':
-      return items.filter(t => t.completed)
+      return items.filter(t => t.complete)
     case 'SHOW_ACTIVE':
-      return items.filter(t => !t.completed)
+      return items.filter(t => !t.complete)
   }
 }
 

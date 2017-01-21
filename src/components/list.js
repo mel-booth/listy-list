@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react'
 import Item from './item'
-import ListHeader from './list-header'
 
 const List = ({ items, onItemClick }) => (
   <ul>
     {items.map(item =>
-      <Item key={item.id}
-      {...item}
-      onClick={() => onItemClick(item.id)}
+      <Item
+        key={item.id}
+        {...item}
+        onClick={() => onItemClick(item.id)}
       />
     )}
   </ul>
@@ -19,7 +19,7 @@ List.propTypes = {
     complete: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  onItemClick:PropTypes.func.isRequired
+  onItemClick: PropTypes.func.isRequired
 }
 
 export default List
