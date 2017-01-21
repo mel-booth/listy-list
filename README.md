@@ -1,2 +1,2 @@
 # listy-list
-React and Redux
+React, Redux and Webpack basic To Do List

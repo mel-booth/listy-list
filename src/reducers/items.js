@@ -1,5 +1,4 @@
 import item from './item'
-import VisibleItemList from '../containers/visibleItemList'
 
 const items = (state = [], action) => {
   switch (action.type) {
