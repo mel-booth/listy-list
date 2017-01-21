@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react'
 import Item from './item'
-import ListHeader from './list-header'
 
 const List = ({ items, onItemClick }) => (
   <ul>
